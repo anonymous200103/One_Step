@@ -353,7 +353,7 @@ h3{
 .cta{
     margin: 100px auto;
     width: 80%;
-    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(image/enr.webp);
+   /* background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(image/enr.webp);*/
     background-position: center;
     background-size: cover;
     border-radius: 10px;
@@ -361,14 +361,53 @@ h3{
     padding: 100px;
 }
 .cta h1{
-    color: white;
+    position: absolute;
+    margin-top: -300px;
+    margin-left: 300px;
+    color: rgb(0, 0, 0);
     margin-bottom: 40px;
     padding: 0;
+    font-weight: 600;
+}
+.bgimage img{
+    width: 100%;
+    height: 400px;
+    margin-top: -170px;
+}
+.more3{
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+    border: 1px solid white;
+    padding: 12px 34px;
+    font-size: 13px;
+    background: blanchedalmond;
+    position: absolute;
+    cursor: pointer;
+    font-weight: 400;
+    margin-top: -150px;
+    margin-left: -90px;
+    
+}
+.more3:hover{
+    border: 1px solid red;
+    background: red;
+    transition: 1s;
 }
 @media(max-width: 700px){
     .cta h1{
-        font-size: 24px;
+        font-size: 20px;
+        position: absolute;
+        margin-left: -95px;
     }
+    .bgimage img{
+        width: 365px;
+        margin-left: -136px;
+    }
+    .more3{
+       margin-left: -145px;
+    }
+
 }
 
 
@@ -476,9 +515,12 @@ form a{
 @media(max-width: 700px){
     .col-2 img{
         width: 250px;
-        margin-left: 55px;
+        margin-left: 20px;
         margin-top: 20px;
     }  
+    .form-container{
+        margin-left: -25px;
+    }
 }
 
 
